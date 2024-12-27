@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Про нас</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="header">
+    <a href="/">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Логотип" class="header__logo">
+    </a>
+
+    <a href="\" class="header__pages">Головна</a>
+    <a href="\about" class="header__pages">Про нас</a>
+    <a href="\create-post" class="header__new-post">Створити</a>
+</div>
+
+<div class="container">
+    <p>Цей сайт - аналог іміджборду 4chan.</p>
+    <h3>У нас є свої правила, і просимо їх дотримуватися:</h3>
+    <ul style="margin-bottom: 50px;">
+        <li>Не кривдити інших</li>
+        <li>Ставитися до всіх з повагою</li>
+        <li>Не поширювати образливий контент</li>
+        <li>Не спамити</li>
+    </ul>
+
+    <p style="color: #8c8c8c;">Розробник: DᘓᕬᓵᖿᎢ</p>
+
+
+
+</div>
+
+
+</body>
+</html>

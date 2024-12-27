@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ article.title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="header">
+    <a href="/">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Логотип" class="header__logo">
+    </a>
+
+    <a href="\" class="header__pages">Головна</a>
+    <a href="\about" class="header__pages">Про нас</a>
+    <a href="\create-post" class="header__new-post">Створити</a>
+</div>
+
+<div class="container">
+    <h4 class="author">{{ article.author }}</h4>
+    <h1>{{ article.title }}</h1>
+
+    <p>{{ article.text }}</p>
+</div>
+
+</body>
+</html>
