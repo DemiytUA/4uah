@@ -32,7 +32,7 @@ body {
     width: 100%;
     height: 60px;
 
-    background-color: #fff;
+    background: #fff;
     color: #000;
     border-bottom: 3px solid #bfbfbf;
 
@@ -40,6 +40,8 @@ body {
     display: flex;
 
     padding-left: 50px;
+
+    z-index: 1;
 }
 
 .header__logo {
@@ -47,7 +49,7 @@ body {
     height: 48px;
 
     margin-top: 5px;
-    margin-right: 500px;
+    margin-right: 40vw;
 }
 
 .header__pages {
@@ -135,4 +137,23 @@ body {
 
 .author {
     color: #7a7a7a;
+}
+
+
+.comment {
+    width: 400px;
+
+    margin-top: 40px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #bfbfbf;
+}
+
+.line {
+    height: 2px;
+    width: 90%;
+
+    background-color: #000;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
 }

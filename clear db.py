@@ -1,4 +1,4 @@
-from app import db, Article, app  # Імпортуйте ваш додаток Flask
+from app import db, Article, Comments, app  # Імпортуйте ваш додаток Flask
 
 # Створіть контекст додатку
 with app.app_context():
