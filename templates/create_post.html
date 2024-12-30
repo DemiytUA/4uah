@@ -10,14 +10,15 @@
 {% include 'header.html' %}
 
 <div class="container">
-    <h1>Створнити новий допис</h1>
+    <h1>Створити новий допис</h1>
     <form method="post" class="subcontainer">
-        <input placeholder="Назва допису" type="text" name="title" id="title" class="form-control">
-        <textarea placeholder="Текст" name="text_" class="form-control" style="height: 70px;"></textarea>
-        <input value="Anonim" type="text" name="author" class="form-control">
+        <input placeholder="Назва допису" type="text" name="title" id="title" class="form-control" required>
+        <textarea placeholder="Текст" name="text_" class="form-control" style="height: 70px;" required></textarea>
+        <input value="Anonim" type="text" name="author" class="form-control" required>
         <input type="submit" class="btn_submit" value="Опублікувати">
     </form>
 </div>
+
 
 </body>
 </html>
