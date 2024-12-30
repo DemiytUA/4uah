@@ -4,6 +4,7 @@ from app import db, Article, Comments, app  # Імпортуйте ваш дод
 with app.app_context():
     # Видаліть всі записи в таблиці Article
     db.session.query(Article).delete()
+    db.session.query(Comments).delete()
 
     # Застосуйте зміни
     db.session.commit()
