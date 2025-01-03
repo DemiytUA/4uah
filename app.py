@@ -44,7 +44,7 @@ def about():
 @app.route('/post/<int:id>', methods=['POST', 'GET'])
 def post(id):
     article = Article.query.get(id)
-    comments = Comments.query.filter_by(post_id=id).all()
+    comments = Comments.query.filter_by(post_id=id).order_by(Comments.id.desc()).all()
 
     if request.method == 'POST':
         text_ = request.form['text_']
